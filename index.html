@@ -1,0 +1,108 @@
+<html lang="es">
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Mi Tienda en Linea </title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Literary Love</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="acerca.html">Acerca</a></li>
+        <li><a href="producto.html">Libros</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+      <selection class="busqueda">
+        <input type="text" id="buscador" placeholder="🔍Buscar..." 
+         oninput="filtrarProductos()"/>
+      </selection>
+  </header>
+  <main>
+    <img src="imagenes/logo.jpg" width="100px" alt="logo"/>
+    <h2>Bienvenido a la terapia entre letras.</h2>
+    <p>Encuentra exelentes libros de ayuda personal.</p>
+    <seletion class="ofertas">
+      <h2>Ofertas</h2>
+      <div class="productos">
+        
+        <figure class="producto">
+          <img src="imagenes/palabras.jpg" width="200px" alt="El poder de las palabras"/>
+          <figcaption>
+            <h3><b>El poder de las palabras: Cómo cambiar tu cerebro (y tu vida) conversando.</b></h3>
+            <p class="descripción">Mariano Sigman.</p>
+            <p class="precio-oferta"><del>$400.00</del> $360.00</p>
+            <p class="rating">⁠☆☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('El poder de las palabras', 36000)">Agregar al Carrito</button>
+          </figcaption>      
+        </figure>
+        
+        <figure class="producto">
+          <img src="imagenes/relatividad.jpg" width="200px" alt="La teoría de la relatividad"/>
+          <figcaption>
+            <h3><b>La Teoría de la Relatividad: Memorias & Margaritas.</b></h3>
+            <p class="descripción">Cristhian Daniel Gaona.</p>
+            <p class="precio-oferta"><del>$450.00</del> $380.00</p>
+            <p class="rating">⁠☆☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('La teoría de la relatividad', 38000)">Agregar al Carrito</button>
+          </figcaption>        
+        </figure>
+        
+        <figure class="producto">
+          <img src="imagenes/rota.jpg" width="200px" alt="Rota se camina igual"/>
+          <figcaption>
+            <h3><b>Rota se camina igual.</b></h3>
+            <p class="descripción">Lorena Pronsky</p>
+            <p class="precio-oferta"><del>$300.00</del> $260.00</p>
+            <p class="rating">⁠☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('Rota se camina igual', 26000)">Agregar al Carrito</button>
+          </figcaption>    
+        </figure>
+        
+        <figure class="producto">
+          <img src="imagenes/pensar.jpg" width="200px" alt="Pensar con el estómago"/>
+          <figcaption>
+            <h3><b>Pensar con el estómago: Cómo la relación entre digestión y cerebro afecta a la salud y el estado de ánimo.</b> </h3>
+            <p class="descripción">Dr.Eneran Mayer.</p>
+            <p class="precio-oferta"><del>$450.00</del> $400.00</p>
+            <p class="rating">⁠☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('Pensar con el estómago', 40000)">Agregar al Carrito</button>
+          </figcaption>        
+        </figure>
+        
+       <figure class="producto">
+          <img src="imagenes/amar.jpg" width="200px" alt="El arte de amar"/>
+          <figcaption>
+            <h3><b>El arte de amar.</b></h3>
+            <p class="descripción">Erich Fromm.</p>
+            <p class="precio-oferta"><del>$500.00</del> $440.00</p>
+            <p class="rating">⁠☆☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('El arte de amar', 44000)">Agregar al Carrito</button>
+          </figcaption>        
+        </figure>
+        
+       <figure class="producto">
+          <img src="imagenes/prohibido.jpg" width="200px" alt="Prohibido suicidarse en Pimavera"/>
+          <figcaption>
+            <h3><b>Prohibido suicidarse en Pimavera.</b></h3>
+            <p class="descripción">Alejandro Casona.</p>
+            <p class="precio-oferta"><del>$470.00</del> $420.00</p>
+            <p class="rating">⁠☆☆☆☆☆</p>
+            <button onclick="agregarAlCarrito('Prohibido suicidarse en Pimavera', 42000)">Agregar al Carrito</button>
+          </figcaption>
+        </figure>
+         
+      </div>
+    </seletion>
+  </main>
+    <footer>
+      <p>&copy; 2025 Mi Tienda</p>
+      
+   <script src="js/main.js"></script>
+   
+    </footer> 
+</body>
+</html>
